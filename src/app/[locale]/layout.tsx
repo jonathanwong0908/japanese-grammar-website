@@ -41,7 +41,7 @@ export default function RootLayout({
             defaultTheme="dark"
             themes={["dark", "light"]}
           >
-            <div className="bg-background min-h-screen">hi{children}</div>
+            <div className="min-h-screen bg-background">{children}</div>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
