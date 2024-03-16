@@ -6,7 +6,15 @@ export default {
   name: "dark",
   extend: {
     backgroundColor: {
-      background: colors.neutral[950],
+      background: colors.gray[950],
+    },
+    textColor: {
+      display: colors.white,
+      body: colors.gray[200],
+    },
+    borderColor: {
+      primary: colors.gray[800],
+      DEFAULT: colors.gray[800],
     },
   },
 };

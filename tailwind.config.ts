@@ -11,6 +11,10 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      body: "var(--font-main)",
+      jp: "var(--font-japanese)",
+    },
     extend: {
       keyframes: {
         "accordion-down": {

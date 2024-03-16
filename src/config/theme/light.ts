@@ -8,5 +8,13 @@ export default {
     backgroundColor: {
       background: colors.orange[50],
     },
+    textColor: {
+      display: colors.black,
+      body: colors.gray[800],
+    },
+    borderColor: {
+      primary: colors.gray[200],
+      DEFAULT: colors.gray[200],
+    },
   },
 };
