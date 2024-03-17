@@ -3,7 +3,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <Link href="/" className="text-display text-2xl font-semibold">
+    <Link href="/" className="font-body text-xl font-semibold text-display">
       Manabo
     </Link>
   );

@@ -1,14 +1,11 @@
 import Navbar from "@/components/core/navbar";
+import ReactQueryProvider from "@/components/core/query-provider";
 import { ThemeProvider } from "@/components/core/theme-provider";
 import { locales } from "@/config/intl";
 import { notoSansJap, onest } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -44,10 +41,12 @@ export default function RootLayout({
             defaultTheme="dark"
             themes={["dark", "light"]}
           >
-            <div className="font-body min-h-screen bg-background">
-              <Navbar />
-              {children}
-            </div>
+            <ReactQueryProvider>
+              <div className="min-h-screen bg-background font-body">
+                <Navbar />
+                {children}
+              </div>
+            </ReactQueryProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
