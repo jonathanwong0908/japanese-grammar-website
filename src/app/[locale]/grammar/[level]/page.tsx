@@ -41,7 +41,7 @@ const JlptLevelPage = ({ params: { level, locale } }: JlptLevelPageProps) => {
           className="text-clamp-xl font-bold leading-none tracking-tighter text-display"
         />
       </div>
-      <Suspense fallback={<div>Loading Async...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <GrammarList level={level} />
       </Suspense>
     </div>

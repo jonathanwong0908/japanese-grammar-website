@@ -39,7 +39,7 @@ const GrammarListClient = ({ level }: { level: JlptLevelString }) => {
         </Fragment>
       ))}
       {isLoading || isFetching ? (
-        <div className="col-span-full">Loading Client...</div>
+        <div className="col-span-full">Loading...</div>
       ) : null}
       <div ref={ref} className="col-span-full">
         {isFetchingNextPage ? <div>Loading next page</div> : null}
