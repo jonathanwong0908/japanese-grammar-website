@@ -24,7 +24,7 @@ const JlptLevelPage = ({ params: { level, locale } }: JlptLevelPageProps) => {
   );
 
   return (
-    <div className="grid max-w-5xl place-items-start gap-8 px-4 py-28 font-body md:mx-auto md:gap-12 md:py-36 lg:px-0">
+    <div className="grid w-full max-w-5xl place-items-start gap-8 px-4 py-28 font-body md:mx-auto md:gap-12 md:py-36 lg:px-0">
       <FadeIn>
         <BackButton href="/grammar" text="Level" />
       </FadeIn>

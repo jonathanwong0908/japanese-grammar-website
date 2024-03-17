@@ -8,7 +8,7 @@ const GrammarList = async ({ level }: { level: JlptLevelString }) => {
   const grammars = await jlptGrammar.getGrammars({ level, page: 1 });
 
   return (
-    <section>
+    <section className="w-full">
       <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
         <MotionGrammarList data={grammars?.data || []} />
         <GrammarListClient level={level} />

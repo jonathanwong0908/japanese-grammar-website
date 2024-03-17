@@ -17,6 +17,12 @@ export async function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params: { level } }: LayoutProps) {
+  return {
+    title: `${level.toUpperCase()} grammar - Manabo`,
+  };
+}
+
 const Layout = ({ children, params: { locale } }: LayoutProps) => {
   unstable_setRequestLocale(locale);
 
