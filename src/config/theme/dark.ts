@@ -8,6 +8,7 @@ export default {
     backgroundColor: {
       background: colors.gray[950],
       secondary: colors.gray[900],
+      brand: colors.pink[600],
     },
     textColor: {
       display: colors.gray[50],
