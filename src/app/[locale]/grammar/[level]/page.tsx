@@ -30,7 +30,7 @@ const JlptLevelPage = ({ params: { level, locale } }: JlptLevelPageProps) => {
       </FadeIn>
       <div className="grid gap-4 md:gap-8">
         <FadeIn>
-          <p className="text-sm text-body md:text-base">
+          <p className="text-brand text-sm md:text-base">
             {levelData?.description}
           </p>
         </FadeIn>

@@ -8,7 +8,7 @@ const GrammarCard = ({ grammar }: { grammar: JlptGrammar }) => {
   return (
     <Card className="group flex min-h-[160px] w-full flex-col justify-between gap-4 p-6 md:min-h-[180px]">
       <div className="grid">
-        <CardTitle className="font-body-jp group-hover:text-brand min-h-9 font-bold">
+        <CardTitle className="group-hover:text-brand min-h-9 font-jp font-bold">
           {grammar?.has_kanji ? (
             <ParseKanji text={grammar?.parse_string} el="span" />
           ) : (

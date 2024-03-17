@@ -15,13 +15,13 @@ const OverviewSection = ({ grammar }: OverviewSectionProps) => {
         {grammar?.forms ? (
           <div className="space-y-1">
             <h4 className="font-body text-lg font-bold">Forms</h4>
-            <p className="font-body-jp text-body">{grammar?.forms}</p>
+            <p className="font-jp text-body">{grammar?.forms}</p>
           </div>
         ) : null}
         {grammar?.usage ? (
           <div className="space-y-1">
             <h4 className="font-body text-lg font-bold">Usage</h4>
-            <p className="font-body-jp text-body">{grammar?.usage}</p>
+            <p className="font-jp text-body">{grammar?.usage}</p>
           </div>
         ) : null}
         {grammar?.meaning ? (

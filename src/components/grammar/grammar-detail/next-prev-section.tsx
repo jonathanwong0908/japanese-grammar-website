@@ -67,10 +67,10 @@ const NextPrevCard = ({
               <ParseKanji
                 text={grammar?.parse_string}
                 el="span"
-                className="font-body-jp group-hover:text-brand font-semibold transition-colors duration-300"
+                className="group-hover:text-brand font-jp font-semibold transition-colors duration-300"
               />
             ) : (
-              <span className="font-body-jp group-hover:text-brand font-semibold transition-colors duration-300">
+              <span className="group-hover:text-brand font-jp font-semibold transition-colors duration-300">
                 {grammar?.name}
               </span>
             )}

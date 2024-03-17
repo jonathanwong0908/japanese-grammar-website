@@ -15,6 +15,7 @@ export default {
       body: colors.gray[800],
       subdued: colors.gray[400],
       brand: colors.pink[600],
+      accent: colors.pink[800],
     },
     borderColor: {
       primary: colors.gray[200],
